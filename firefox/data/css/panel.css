@@ -1,0 +1,222 @@
+body {
+  margin:0;
+  padding:0;
+}
+
+#multifind-panel {
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  background: #D8F0F0;
+  border-top: 1px solid #CCC;
+  display: block;
+  z-index: 999;
+}
+
+@media screen and (max-width: 1250px) {
+    #multifind-panel {
+        visibility: hidden;
+    }
+}
+
+.multifind-close {
+  position: absolute;;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  overflow: hidden;
+  right:5px;
+  top: 7px;
+}
+
+.multifind-close:hover {
+  background: #F00;
+}
+
+.multifind-close:hover::before, .multifind-close:hover::after {
+  background: #FFF;
+}
+
+.multifind-close::before, .multifind-close::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  background: #888;
+  height: 3px;
+  margin-top: -2px;
+}
+
+.multifind-close::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.multifind-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#multifind-panel input {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 134px;
+  height: 16px;
+  border: 1px solid #CCC;
+  border-radius: 0px;
+  font-size: 12px;
+  font-style: italic;
+  color: #888;
+  padding: 2px;
+  text-indent: 3px;
+  background: url(../images/search.png) 5px no-repeat;
+  background-size: 12px 12px;
+  background-color: white;
+  padding-left: 15px;
+}
+
+#multifind-panel input:focus {
+  border: 1px solid #6699FF;
+  font-style: normal;
+  color: #000;
+}
+
+#multifind-panel .fa-angle-up {
+  position: absolute;
+  left: 155px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CCC;
+  text-align: center;
+  color: #888;
+  line-height: 15px;
+  font-weight: bold;
+  cursor: default;
+  background: url(../images/up.png) center center no-repeat;
+  background-size: 8px 8px;
+  background-color: #F0FFFF;
+}
+
+#multifind-panel .fa-angle-up:active {
+  background-color: #CCCCFF;
+}
+
+#multifind-panel .fa-angle-down {
+  position: absolute;
+  left: 175px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CCC;
+  text-align: center;
+  color: #888;
+  line-height: 20px;
+  font-weight: bold;
+  cursor: default;
+  background: url(../images/down.png) center center no-repeat;
+  background-size: 8px 8px;
+  background-color: #F0FFFF;
+}
+
+#multifind-panel .fa-angle-down:active {
+  background-color: #CCCCFF;
+}
+
+#multifind-panel .fa-minus-square-o {
+  position: absolute;
+  left: 215px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #AAA;
+  line-height: 24px;
+  font-size: 20px;
+  cursor: default;
+  background: url(../images/minus.png) center center no-repeat;
+  background-size: 16px 16px;
+}
+
+#multifind-panel .fa-minus-square-o:active {
+  left: 216px;
+  top: 5px;
+}
+
+#multifind-panel .fa-plus-square-o {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  color: #AAA;
+  line-height: 24px;
+  font-size: 20px;
+  cursor: default;
+  background: url(../images/plus.png) center center no-repeat;
+  background-size: 16px 16px;
+}
+
+#multifind-panel .fa-plus-square-o:active {
+  left: 6px;
+  top: 5px;
+}
+
+.multifind-findbox {
+  position: absolute;
+}
+
+#multifind-findbox0 {
+  left: 5px;
+}
+
+#multifind-findbox1 {
+  left: 300px;
+}
+
+#multifind-findbox2 {
+  left: 600px;
+}
+
+#multifind-findbox3 {
+  left: 900px;
+}
+
+.multifind-separator {
+  position: absolute;
+  color: #CCC;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+#multifind-separator0 {
+  left: 265px;
+  top: 3px;
+}
+
+#multifind-separator1 {
+  left: 565px;
+  top: 3px;
+}
+
+#multifind-separator2 {
+  left: 865px;
+  top: 3px;
+}
+
+#multifind-separator3 {
+  left: 1165px;
+  top: 3px;
+}

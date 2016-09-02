@@ -1,0 +1,16 @@
+{
+  "title": "MultiFinder",
+  "name": "multifinder",
+  "version": "0.1.0",
+  "description": "MultiFinder supports multi-keyword search, and is more powerful than the built-in search function",
+  "main": "index.js",
+  "author": "Xiduo Tian",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "multifind"
+  ]
+}
